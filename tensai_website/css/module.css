@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/*=================================================
+ベース
+===================================================*/
+body {
+    color: #222;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #0069ff;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/*=================================================
+レイアウト
+===================================================*/
+/*=================================================
+レイアウト メイン
+===================================================*/
+.ly_cont {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*==============================================
+最小モジュール
+==============================================*/
+
+/*====== ボタン ======*/
+
+.el_btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.el_btn:focus,
+.el_btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+}
+
+.el_btn.el_btn__arrowRight {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 1.38em;
+}
+
+.el_btn.el_btn__arrowRight::after {
+    content: '\f061';
+    position: absolute;
+    top: 50%;
+    right: .83em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    transform: translateY(-50%);
+
+}
+
+.el_btn.el_btn__large {
+    width: 340px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.375rem;
+}
+
+.el_btn.el_btn__yellow {
+    background-color: #f1de00;
+    border: 2px solid transparent;
+    color: #222;
+}
+
+.el_btn.el_btn_yellow:focus,
+.el_btn.el_btn__yellow:hover {
+    background-color: #fff;
+    border-color: #f1de00;
+}
+
+.el_roundedBtn {
+    display: inline-block;
+    width: 236px;
+    max-width: 100%;
+    padding: 15px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    border-bottom-color: #d40152;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.el_roundedBtn:focus,
+.el_roundedBtn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+}
+
+/*====== アイコン ======*/
+
+.el_beforeIconBtn {
+    position: relative;
+    display: inline-block;
+    padding: .2em .3em;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.el_beforeIconBtn:focus,
+.el_beforeIconBtn:hover {
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.el_beforeIconBtn::before {
+    display: inline-block;
+    margin-right: .5em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.el_beforeIconBtn.el_beforeIconBtn__download::before {
+    content: '\f019';
+}
+
+.el_beforeIconBtn.el_beforeIconBtn__zoom::before {
+    content: '\f00e';
+    transform: translateY(-6%);
+}
+
+.el_beforeIcon::before {
+    display: inline-block;
+    margin-right: .3em;
+    color: #e25c00;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.el_beforeIcon.el_beforeIcon__pdf::before {
+    content: '\f1c1';
+}
+
+.el_beforeIcon.el_beforeIcon__excel::before {
+    content: '\f1c3';
+}
+
+.el_beforeIcon.el_beforeIcon__pp::before {
+    content: '\f1c4';
+}
+
+.el_beforeIcon.el_beforeIcon__checkSquare::before {
+    content: '\f14a';
+}
+
+.el_beforeIcon.el_beforeIcon__chevronLeft::before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-bottom: .125em solid #e25c00;
+    border-left: .125em solid #e25c00;
+    transform: rotate(45deg) translateY(-30%);
+}
+
+.el_afterIcon::after {
+    display: inline-block;
+    margin-right: .3em;
+    color: #e25c00;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.el_afterIcon.el_afterIcon__chevronRight::after {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-top: .125em solid #e25c00;
+    border-right: .125em solid #e25c00;
+    transform: rotate(45deg) translateY(-30%);
+}
+
+/*====== ラベル ======*/
+
+.el_label {
+    display: inline-block;
+    padding: .2em .3em;
+    background-color: #e25c00;
+    color: #fff;
+    border: 2px solid transparent;
+    font-size: .75em;
+    font-weight: bold;
+}
+
+a.el_label {
+    text-decoration: none;
+    transition: .25s;
+}
+
+a.el_label:focus,
+a.el_label:hover {
+    background-color: #fff;
+    border:2px solid currentColor;
+    color: #e25c00;
+}
+
+.el_label.el_label__yellow {
+    background-color: #F1DE00;
+    color: #000;
+}
+
+.el_roundedLabel {
+    display: inline-block;
+    padding: .3em .9em;
+    background-color: #e25c00;
+    color: #fff;
+    border-radius: 1em;
+    font-size: .75em;
+    font-weight: bold;
+}
+
+/*====== ページタイトル 見出し ======*/
+
+.el_lv1Heading {
+    padding: 30px 10px;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.el_lv1Heading > span {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+}
+
+.el_lv1Heading > span::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+}
+
+.el_lv2Heading {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #e25c00;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.el_lv3Heading {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e25c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.el_lv4Heading {
+    padding-left: 6px;
+    border-left: 2px solid #e25c00;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.el_lv5Heading {
+    color: #e25c00;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.el_lv6Heading {
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+/*====== 注釈 ======*/
+
+.el_caution {
+    color: #D40152;
+}
+
+.el_note {
+    font-size: .75rem;
+}

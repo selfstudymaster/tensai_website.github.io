@@ -1,0 +1,1684 @@
+@charset "UTF-8";
+
+/*=================================================
+ベース
+===================================================*/
+body {
+    color: #222;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #0069ff;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/*=================================================
+レイアウト
+===================================================*/
+/*=================================================
+レイアウト ヘッダー
+===================================================*/
+.ly_header {
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ly_header_inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*=================================================
+レイアウト メイン
+===================================================*/
+.ly_cont {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*=================================================
+レイアウト フッター
+===================================================*/
+.ly_footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #222;
+}
+
+.ly_footer_inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*=================================================
+モジュール
+===================================================*/
+/*=================================================
+モジュール ヘッダー
+===================================================*/
+.bl_headerUtils {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.bl_headerUtils_logo {
+    width: 150px;
+}
+
+.bl_headerUtils .el_btn {
+    width: auto;
+    padding: 10px 20px;
+    box-shadow: none;
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.bl_headerNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bl_headerNav_item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.bl_headerNav_item:last-child .bl_headerNav_link::after {
+    content: none;
+}
+
+.bl_headerNav_link {
+    position: relative;
+    display: block;
+    padding: 15px 5px;
+    border-bottom: 4px solid transparent;
+    color: #222;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.bl_headerNav_link:focus,
+.bl_headerNav_link:hover {
+    border-bottom-color: #e25c00;
+}
+
+.bl_headerNav_link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+
+/*==================================
+モジュール
+==================================*/
+
+/*==================================
+モジュール メディア
+==================================*/
+.bl_media {
+    /* 画像とテキストを横並び */
+    display: flex;
+    /* テキストを中央に配置 */
+    align-items: center;
+}
+
+.bl_media_imgWrapper {
+    /* 左から flex-grow flex-shrink flex-basis */
+    /* スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex:0 1 27.58333%;
+    /* 画像とテキストの間の余白40pxを、画面幅1200pxで割った値で指定 */
+    margin-right: 3.33333%;
+}
+
+.bl_media_imgWrapper > img {
+    /**/
+    width: 100%;
+}
+
+.bl_media_body {
+    /*flex-grow:1; flex-shrink:0; flex-basis:なし; の意味*/
+    /* スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex: 1;
+
+}
+
+/* 最後の子要素の余白をリセットし、上の子要素がなくなった際に上にズレるのを防ぐ */
+.bl_media_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_media_ttl {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+/*==================================
+モジュール メディア 逆位置
+==================================*/
+/* 横並びレイアウトの左右を入れ替える */
+.bl_media.bl_media__rev {
+    flex-direction: row-reverse;
+}
+
+/* デフォルトで右側に配置された画像にかけたmargin-rightを解除 */
+.bl_media__rev .bl_media_imgWrapper {
+    margin-right: 0;
+}
+
+/* 右側に配置されたテキストにmargin-rightを指定 */
+.bl_media__rev .bl_media_body {
+    margin-right: 3.33333%;
+    text-align: right;
+}
+
+/*==============================================================
+モジュール メディア 画像半分サイズ
+画像半分サイズはよく使うので、class名をharlMediaにして別モジュールを作る
+===============================================================*/
+.bl_halfMedia {
+    /*画像とテキストを横並び*/
+    display: flex;
+    /*テキストを中央に配置*/
+    align-items: center;
+}
+
+.bl_halfMedia_imgWrapper {
+    /* 左から flex-grow flex-shrink flex-basis */
+    /*  スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex:0 1 48.33333%;
+    /* 画像とテキストの間の余白40pxを、画面幅1200pxで割った値で指定 */
+    margin-right: 3.33333%;
+}
+
+.bl_halfMedia_imgWrapper > img {
+    /**/
+    width: 100%;
+}
+
+.bl_halfMedia_body {
+    /* flex-grow:1; flex-shrink:0; flex-basis:なし; の意味 */
+    /* スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex: 1;
+}
+
+/* 最後の子要素の余白をリセットし、上の子要素がなくなった際に上にズレるのを防ぐ */
+.bl_halfMedia_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_halfMedia_ttl {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+/*==================================
+モジュール カード
+==================================*/
+.bl_card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+/* padding-top:56.25%;で画像の縦横比をおおよそ16:9にする指定 */
+.bl_card_imgWrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* bl_card_imgWrapper > imgで指定する画像が溢れないための指定 */
+    overflow: hidden;
+}
+
+/* 画像を天地中央揃えで、なおかつ横幅いっぱいにする指定 */
+.bl_card_imgWrapper > img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.bl_card_body {
+    padding: 15px;
+}
+
+.bl_card_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_card_ttl {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.bl_card_txt {
+    color: #777;
+}
+
+/*==================================
+モジュール カード バッヂ付き
+==================================*/
+
+.bl_card_badge {
+    position: relative;
+}
+
+.bl_card_badge::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    /* バッチの三角形を描画する */
+    border-width: 3.75rem 3.75rem 0 0;
+    border-style: solid;
+    border-color: #e25c00 transparent transparent transparent;
+}
+
+.bl_card_badge_txt {
+    position: absolute;
+    z-index: 2;
+    top: .5rem;
+    left: .3125rem;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: bold;
+    /* バッヂ内のテキストを45度傾ける */
+    transform: rotate(-45deg);
+}
+
+/*==================================
+モジュール カード リンク付き
+==================================*/
+a.bl_card {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    transition: .25s;
+}
+
+a.bl_card a.bl_card_ttl,
+a.bl_card a.bl_card_txt {
+    transition: .25s;
+}
+
+a.bl_card:focus,
+a.bl_card:hover {
+    opacity: .75;
+}
+
+a.bl_card:focus .bl_card_ttl,
+a.bl_card:focus .bl_card_txt,
+a.bl_card:hover .bl_card_ttl,
+a.bl_card:hover .bl_card_txt {
+    color: #e25c00;
+    text-decoration: underline;
+}
+
+/*==================================
+モジュール カード 3カラム
+==================================*/
+
+/* カラムを横並びに指定 */
+.bl_cardUnit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 最終行のカラムに付与されたmargin-bottom-30pxをラッパ＝カラムにマイナス指定して相殺 */
+.bl_cardUnit.bl_cardUnit__col3 {
+    margin-bottom: -30px;
+}
+
+.bl_cardUnit__col3 > .bl_card {
+    width: 31.707%;
+    margin-right: 2.43902%;
+    margin-bottom: 30px;
+}
+
+/* 最右端のカラムに付与されたmargin-rightを0に指定 */
+.bl_cardUnit__col3 > .bl_card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*==================================
+モジュール カード 4カラム
+==================================*/
+
+/* 最終行のカラムに付与されたmargin-bottom-20pxをラッパ＝カラムにマイナス指定して相殺 */
+.bl_cardUnit.bl_cardUnit__col4 {
+    margin-bottom: -20px;
+}
+
+.bl_cardUnit__col4 > .bl_card {
+    width: 23.78%;
+    margin-right: 1.62602%;
+    margin-bottom: 20px;
+}
+
+/* 最右端のカラムに付与されたmargin-rightを0に指定 */
+.bl_cardUnit__col4 > .bl_card:nth-child(4n) {
+    margin-right: 0;
+}
+
+/*==================================
+モジュール テーブル 水平
+==================================*/
+.bl_horizontalTable {
+    border: 1px solid #ddd;
+}
+
+.bl_horizontalTable table {
+    width: 100%;
+}
+
+.bl_horizontalTable th {
+    width: 20%;
+    padding: 15px;
+    background-color: #efefef;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.bl_horizontalTable td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 最終列のborder-bottom-widthを0に指定し、
+   bl_horizontalTableの外枠下線と被るのを解除 */
+.bl_horizontalTable tr:last-child th,
+.bl_horizontalTable tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/*==================================
+モジュール テーブル 垂直
+==================================*/
+.bl_verticalTable {
+    border: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+.bl_verticalTable table {
+    width: 100%;
+    text-align: center;
+}
+
+.bl_verticalTable thead tr {
+    background-color: #efefef;
+}
+
+.bl_verticalTable th {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.bl_verticalTable td {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* bl_horizontalTableの右縦線が指定済なので、
+   thとtdのborder-right-widthを0に指定して右縦線の被りを解除 */
+.bl_verticalTable th:last-child,
+.bl_verticalTable td:last-child {
+    border-right-width: 0;
+}
+
+/* bl_horizontalTableの下線を指定済なので、
+   一番下のtdのborder-bottom-widthを0に指定して最下段の下線の被りを解除 */
+.bl_verticalTable tbody tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/*==================================
+モジュール テーブル 交差
+==================================*/
+.bl_crossTable {
+    border: 1px solid #ddd;
+}
+
+.bl_crossTable table {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.bl_crossTable th {
+    padding: 15px;
+    background-color: #efefef;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.bl_crossTable td {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.bl_crossTable th:last-child,
+.bl_crossTable td:last-child {
+    border-right-width: 0;
+}
+
+.bl_crossTable tbody tr:last-child th,
+.bl_crossTable tbody tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/*==================================
+ページャー
+==================================*/
+.bl_pager {
+    display: flex;
+    overflow-x: auto;
+}
+
+.bl_pager_inner {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bl_pager_inner >*:last-child {
+    margin-right: 0;
+}
+
+.bl_pager_inner > li {
+    margin-right: 15px;
+}
+
+.bl_pager_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.bl_pager_link:focus,
+.bl_pager_link:hover {
+  background-color: #e25c00;
+  color: #fff;
+  opacity: .75;
+}
+
+.bl_pager_link.is_active {
+  background-color: #e25c00;
+  color: #fff;
+  pointer-events: none;
+}
+
+/*==================================
+タブナビゲーション
+==================================*/
+.bl_tabNav_inner {
+    display: flex;
+    align-items: center;
+    /*モジュールの横幅がスクリーン幅を上回った場合に折り返す指定*/
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.bl_tabNav_link {
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #efefef;
+    color: #777;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.bl_tabNav_link:focus,
+.bl_tabNav_link:hover {
+    border-bottom-color: currentColor;
+    color: #e25c00;
+    opacity: .75;
+}
+
+.bl_tabNav_link.is_active {
+    border-bottom-color: currentColor;
+    color: #e25c00;
+    pointer-events: none;
+}
+
+/*==================================
+CTA
+==================================*/
+.bl_cta {
+    padding: 30px;
+    background-color: rgba(221, 116, 44, .05);
+    border: 1px solid #e25c00;
+    text-align: center;
+}
+
+.bl_cta > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_cta_ttl {
+    padding-bottom: 10px;
+    margin-top: -6px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid currentColor;
+    color: #e25c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*==================================
+料金表
+==================================*/
+/*ラッパーモジュールに対する指定*/
+.bl_priceUnit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bl_priceUnit .bl_price {
+    /*flex-grow:1; flex-shrink:0; flex-basis:なし; の意味*/
+    /* プランを品等幅で表示させるための指定 */
+    flex: 1;
+    margin-right: 2.43902%;
+}
+
+.bl_priceUnit .bl_price:last-child {
+    margin-right: 0;
+}
+
+.bl_price {
+    border: 1px solid #ddd;
+    list-style-type: none
+}
+
+.bl_price_header {
+    padding: 10px;
+    background-color: #e25c00;
+    color: #fff;
+    text-align: center;
+}
+
+.bl_price_ttl {
+    font-size: 1.125rem;
+}
+
+.bl_price_price {
+    font-size: 1.875rem;
+}
+
+.bl_price_price span {
+    font-size: 1rem;
+}
+
+.bl_price_body {
+    padding: 15px;
+}
+
+.bl_price_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_price_lead {
+    margin-bottom: 20px;
+}
+
+.bl_price_features {
+    text-align: center;
+}
+
+.bl_price_features > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_price_features dt {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #efefef;
+}
+
+.bl_price_features dd {
+    margin-bottom: 20px;
+}
+
+/*==================================
+料金表テーブル バリエーション
+==================================*/
+/*ヘルパークラス*/
+.md_only {
+    display: none !important;
+}
+
+/*ラッパーモジュールに対する指定*/
+.bl_priceTable table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.bl_priceTable_header {
+    padding: 10px;
+    background-color: #e25c00;
+    border-right: 1px solid currentColor;
+    color: #fff;
+    text-align: center;
+}
+
+.bl_priceTable_header:last-child {
+    border-right-width: 0;
+}
+
+.bl_priceTable_headerTtl {
+    font-size: 1.125rem;
+}
+
+.bl_priceTable_price {
+    font-size: 1.875rem;
+}
+
+.bl_priceTable_price span {
+    font-size: 1rem;
+}
+
+.bl_priceTable_bodyTtl {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.bl_priceTable td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bl_priceTable td:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.bl_priceTable tr:last-child >* {
+    border-bottom: 1px solid #ddd;
+}
+
+/*==================================
+FAQ
+==================================*/
+.bl_faq >*:last-child {
+    margin-bottom: 0;
+}
+
+.bl_faq_q,
+.bl_faq_a {
+    position: relative;
+    /*アイコンとテキストを横並びに指定*/
+    display: flex;
+    /*天地位置を頭揃えに指定*/
+    align-items: flex-start;
+    /*アイコンの表示場所を確保するための指定*/
+    box-sizing: content-box;
+    min-height: 45px;
+    padding-left: 60px;
+}
+
+.bl_faq_q {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+/*頭揃えで上に寄った分の余白を下げる指定*/
+.bl_faq_q_txt {
+    padding-top: 12px;
+}
+
+.bl_faq_a {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bl_faq_icon {
+    /*アイコンの表示位置を左上に指定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*アイコンを縦横45pxの大きさに設定*/
+    width: 45px;
+    height: 45px;
+    /*アイコンを四角形から正円へ*/
+    border-radius: 50%;
+    font-weight: normal;
+    /*line-heightの値をheightと同じ値に設定することで、天地中央揃えを実現*/
+    line-height: 45px;
+    text-align: center;
+}
+
+.bl_faq_q .bl_faq_icon {
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.bl_faq_a .bl_faq_icon {
+    background: #efefef;
+    color: #e25c00;
+}
+
+/*頭揃えで上に寄った分の余白を下げる指定*/
+.bl_faq_a_body {
+    padding-top: 12px;
+}
+
+.bl_faq_a_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_faq_a_txt {
+    margin-bottom: 20px;
+}
+
+/*==================================
+アコーディオン
+==================================*/
+/*二つ目以降の要素に適用することを示すために+を用いる*/
+.bl_accordion_body + dt {
+    /*margin-bottomで指定すると、display:none;がかかってる要素にmarginが効かないため
+      margin-topで指定*/
+    margin-top: 20px;
+}
+
+.bl_accordion_btn {
+    position: relative;
+    /*button要素は初期値がinline-block要素でwidth:auto;のため、
+      block要素にしwidth:100%に指定;*/
+    display: block;
+    width: 100%;
+    padding:10px 40px 10px 15px ;
+    background-color: #e25c00;
+    border: 2px solid #e25c00;
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: left;
+    cursor: pointer;
+    transition: .25s;
+}
+
+/*プラス・マイナスアイコンの横棒を描画*/
+.bl_accordion_btn::before {
+    content: '';
+    /*右から15px、天地中央に配置*/
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    /*横棒を描画*/
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    /*正確な天地中央にするよう、要素の半分の大きさだけ上方向へ位置修正*/
+    transform: translateY(-50%);
+}
+
+/*プラスアイコンの縦棒を描画*/
+.bl_accordion_btn::after {
+    content: '';
+    /*右上から24px、天地中央に配置*/
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    /*横棒を描画*/
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: currentColor;
+    /*正確な天地中央にするよう、要素の半分の大きさだけ上方向へ位置修正*/
+    transform: translateY(-50%);
+}
+
+.bl_accordion_btn:focus,
+.bl_accordion_btn:hover {
+    background-color: #fff;
+    color: #e25c00;
+}
+
+/*タイトルがアクティブ時に縦棒が消えて横棒だけ残る指定*/
+.bl_accordion_btn.is_active::after {
+    content: none;
+}
+
+.bl_accordion_body {
+    /*アコーディオンのコンテンツ部分はデフォルトでは閉じているためdisplay:none;を指定*/
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.bl_accordion_body >*:last-child {
+    margin-bottom: 0;
+}
+
+.bl_accordion_body.is_active {
+    display: block;
+}
+
+.bl_accordion_txt {
+    margin-bottom: 20px;
+}
+
+/*==================================
+ジャンボトロン
+==================================*/
+.bl_jumbotron {
+    /*メディアクエリ適用時、スクリーンサイズを縮小した際にガクッとならず自然とサイズを切り替えるための指定
+      calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
+    height: calc(69.44444vw + -233.33333px);
+    /*背景画像を左右中央配置*/
+    background-position: center center;
+    background-size: cover;
+}
+
+.bl_jumbotron_inner {
+    position: relative;
+    /*コンテンツの最大幅と左右中央寄せの指定*/
+    max-width: 1230px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bl_jumbotron_ttl {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    /*メディアクエリ適用時、スクリーンサイズを縮小した際にガクッとならず自然とサイズを切り替えるための指定
+      calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
+    font-size: calc(1.81818vw + 14.18182px);
+    line-height: 1.5;
+    transform: translateY(-50%);
+}
+
+/*==================================
+ポストリスト
+==================================*/
+.bl_vertPosts {
+    list-style-type: none
+}
+
+.bl_vertPosts_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bl_vertPosts_item:first-child {
+    padding-top:0
+}
+
+.bl_vertPosts_header {
+    margin-bottom: 10px;
+}
+
+.bl_vertPosts_date {
+    font-size: .875rem;
+}
+
+.bl_vertPosts_ttl {
+    text-decoration: none;
+}
+
+.bl_vertPosts_ttl:focus,
+.bl_vertPosts_ttl:hover {
+    text-decoration: underline;
+}
+
+/*==================================
+順序なしリスト
+==================================*/
+.bl_bulletList {
+    list-style-type: none
+}
+
+.bl_bulletList >*:last-child {
+    margin-bottom: 0;
+}
+
+.bl_bulletList li {
+    position: relative;
+    /*行頭アイコンを表示するためのスペースを確保。
+      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    padding-left: 1em;
+    margin-bottom: 10px;
+}
+
+.bl_bulletList > li::before {
+    content: '';
+    /*行頭アイコンの位置を決定*/
+    position: absolute;
+    top: .5em;
+    left: 0;
+    /*行頭アイコンの描画。フォントサイズに応じて自動的にサイズも増幅させるためにemで指定*/
+    display: block;
+    width: .4em;
+    height: .4em;
+    background-color: #e25c00;
+    border-radius: 50%;
+}
+
+/*==================================
+順序なしリスト 横並び 拡張パターン
+==================================*/
+.bl_bulletList.bl_bulletList__horiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.bl_bulletList.bl_bulletList__horiz > li {
+    flex: calc(50% - 5px);
+    margin-right: 10px;
+}
+
+.bl_bulletList.bl_bulletList__horiz > li:nth-last-of-type(even) {
+    margin-right: 0;
+}
+
+/*==================================
+順序なしリスト ネスト バリエーション
+==================================*/
+.bl_bulletList ul {
+    padding-left: 1.5em;
+    margin-top: 10px;
+    list-style-type: circle;
+}
+
+.bl_bulletList ul > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_bulletList ul > li {
+    margin-bottom: 10px;
+}
+
+/*==================================
+順序ありリスト
+==================================*/
+.bl_orderList {
+    /*olの行頭番号を非表示に指定*/
+    list-style-type: none;
+    /*CSSカウンターを利用してcounter-resetを宣言し、カウンターの値を初期化*/
+    counter-reset: bl_orderList;
+}
+
+.bl_orderList > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_orderList li {
+    position: relative;
+    /*行頭アイコンを表示するためのスペースを確保。
+      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    padding-left: 1em;
+    margin-bottom: 10px;
+}
+
+.bl_orderList > li::before {
+    /*カウンターの値を利用。値の後ろに.が付くように指定*/
+    content: counter(bl_orderList)'. ';
+    /*行頭アイコンの位置を決定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e25c00;
+    font-weight: bold;
+    /*カウンターの数値を1足す指定*/
+    counter-increment: bl_orderList;
+}
+
+/*==================================
+順序ありリスト ネスト バリエーション
+==================================*/
+.bl_orderList ol {
+    list-style-type: none;
+    margin-top: 10px;
+    /*CSSカウンターを利用してcounter-resetを宣言し、カウンターの値を初期化*/
+    counter-reset: bl_childOrderList;
+}
+
+.bl_orderList ol > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_orderList ol > li {
+    position: relative;
+    /*行頭アイコンを表示するためのスペースを確保。
+      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    padding-left: 1em;
+    margin-bottom: 10px;
+}
+
+.bl_orderList ol > li::before {
+    /*カウンターの値を利用。値の後ろに.が付くように指定*/
+    content: counter(bl_childOrderList)'. ';
+    /*行頭アイコンの位置を決定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e25c00;
+    /*カウンターの数値を1足す指定*/
+    counter-increment: bl_childOrderList;
+}
+
+/*モジュールの再利用（最小モジュールを利用した複合モジュールの作成*/
+/*==================================
+モジュールの再利用 水平ボタンリスト
+==================================*/
+.bl_horizBtnList {
+    display: flex;
+    justify-content: center;    
+}
+
+.bl_horizBtnList > *:last-child {
+    margin-right: 0;
+}
+
+.bl_horizBtnList > li {
+    flex: 1 1 0;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.bl_horizBtnList.el_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*======================================
+モジュールの再利用 ボタン+画像半分サイズメディア
+=======================================*/
+.bl_halfMedia {
+    /*画像とテキストを横並び*/
+    display: flex;
+    /*テキストを中央に配置*/
+    align-items: center;
+}
+
+.bl_halfMedia_imgWrapper {
+    /* 左から flex-grow flex-shrink flex-basis */
+    /*  スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex:0 1 48.33333%;
+    /* 画像とテキストの間の余白40pxを、画面幅1200pxで割った値で指定 */
+    margin-right: 3.33333%;
+}
+
+.bl_halfMedia_imgWrapper > img {
+    width: 100%;
+}
+
+.bl_halfMedia_body {
+    /* flex-grow:1; flex-shrink:0; flex-basis:なし; の意味 */
+    /* スクリーン幅を縮小した際に画像とテキストを自然に縮小させるための指定 */
+    flex: 1;
+}
+
+/* 最後の子要素の余白をリセットし、上の子要素がなくなった際に上にズレるのを防ぐ */
+.bl_halfMedia_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_halfMedia_ttl {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.bl_halfMedia_txt {
+    margin-bottom: 20px;
+}
+
+/*======================================
+モジュールの再利用 ボタン + CTAエリア
+=======================================*/
+.bl_cta {
+    padding: 30px;
+    background-color: rgba(221, 116, 44, .05);
+    border: 1px solid #e25c00;
+    text-align: center;
+}
+
+.bl_cta > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_cta_ttl {
+    padding-bottom: 10px;
+    margin-top: -6px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid currentColor;
+    color: #e25c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bl_cta_txt {
+    margin-bottom: 40px;
+}
+
+/*==================================
+ラベル + ポストリスト
+==================================*/
+.bl_vertPosts {
+    list-style-type: none
+}
+
+.bl_vertPosts_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bl_vertPosts_item:first-child {
+    padding-top:0
+}
+
+.bl_vertPosts_header {
+    margin-bottom: 10px;
+}
+
+.bl_vertPosts_header >*:last-child {
+    margin-right: 0;
+}
+
+.bl_vertPosts_date {
+    font-size: .875rem;
+    margin-right: 10px;
+}
+
+.bl_vertPosts_labels {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+  
+.bl_vertPosts_labels > *:last-child {
+    margin-right: 0;
+}
+  
+.bl_vertPosts_labels > li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bl_vertPosts_ttl {
+    text-decoration: none;
+}
+
+.bl_vertPosts_ttl:focus,
+.bl_vertPosts_ttl:hover {
+    text-decoration: underline;
+}
+
+/*==================================
+FAQ + リスト
+==================================*/
+.bl_faq >*:last-child {
+    margin-bottom: 0;
+}
+
+.bl_faq_q,
+.bl_faq_a {
+    position: relative;
+    /*アイコンとテキストを横並びに指定*/
+    display: flex;
+    /*天地位置を頭揃えに指定*/
+    align-items: flex-start;
+    /*アイコンの表示場所を確保するための指定*/
+    box-sizing: content-box;
+    min-height: 45px;
+    padding-left: 60px;
+}
+
+.bl_faq_q {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+/*頭揃えで上に寄った分の余白を下げる指定*/
+.bl_faq_q_txt {
+    padding-top: 12px;
+}
+
+.bl_faq_a {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bl_faq_icon {
+    /*アイコンの表示位置を左上に指定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*アイコンを縦横45pxの大きさに設定*/
+    width: 45px;
+    height: 45px;
+    /*アイコンを四角形から正円へ*/
+    border-radius: 50%;
+    font-weight: normal;
+    /*line-heightの値をheightと同じ値に設定することで、天地中央揃えを実現*/
+    line-height: 45px;
+    text-align: center;
+}
+
+.bl_faq_q .bl_faq_icon {
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.bl_faq_a .bl_faq_icon {
+    background: #efefef;
+    color: #e25c00;
+}
+
+/*頭揃えで上に寄った分の余白を下げる指定*/
+.bl_faq_a_body {
+    padding-top: 12px;
+}
+
+.bl_faq_a_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_faq_a_txt {
+    margin-bottom: 20px;
+}
+
+.bl_bulletList ul {
+    padding-left: 1.5em;
+    margin-top: 10px;
+    list-style-type: circle;
+}
+
+.bl_bulletList ul > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_bulletList ul > li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bl_bulletList ul > li::before {
+    content: '';
+    /*行頭アイコンの位置を決定*/
+    position: absolute;
+    top: .5em;
+    left: 0;
+    /*行頭アイコンの描画。フォントサイズに応じて自動的にサイズも増幅させるためにemで指定*/
+    display: block;
+    width: .2em;
+    height: .2em;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+/*==================================
+アコーディオン + カード + CTAエリア
+==================================*/
+/*追加分*/
+.bl_accordion .bl_cardUnit {
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+
+/*=================================================
+モジュール フッター
+===================================================*/
+.bl_footerNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bl_footerNav_item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.bl_footerNav_item > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_footerNav_item:last-child .bl_footerNav_link::after {
+    content: none;
+}
+
+.bl_footerNav_link {
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bl_footerNav_link:focus,
+.bl_footerNav_link:hover {
+    text-decoration: underline;
+}
+
+.bl_footerNav_link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 15px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+
+.bl_footerChildNav_item {
+    margin-bottom: 10px;
+  }
+
+.bl_footerChildNav_link {
+    display: block;
+    padding: 8px 5px;
+    font-size: 15px;
+    color: #ddd;
+    text-decoration: none;
+}
+  
+.bl_footerChildNav_item {
+    margin-bottom: 10px;
+}
+  
+.bl_footerChildNav_link {
+    color: #ddd;
+    font-size: 15px;
+    text-decoration: none;
+}
+  
+.bl_footerChildNav_link:focus,
+.bl_footerChildNav_link:hover {
+    text-decoration: underline;
+}
+
+.hp_btGray {
+    border-top: 1px solid #777 !important;
+}
+
+.el_footerCopyright {
+    display: block;
+    color: #ddd;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*=============================================
+メディアクエリ
+===============================================*/
+/*コンテンツ幅が1200px以上の場合、高さやフォントサイズを一定に保つための指定*/
+@media screen and (min-width: 1200px) {
+    .bl_jumbotron {
+        height: 600px;
+    }
+
+    .bl_jumbotron_ttl {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bl_media {
+        display: block;
+    }
+
+    .bl_media_imgWrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /*メディアクエリでは縦配置になるので不要なmargin-rightを解除*/
+    .bl_media__rev .bl_media_body {
+        margin-right: 0;
+    }
+
+    /*=========モジュール 画像半分サイズ=======*/
+    .bl_halfMedia {
+        display: block;
+    }
+
+    .bl_halfMedia_imgWrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /*======モジュール カード 3カラム=====*/
+    .bl_cardUnit.bl_cardUnit__col3 {
+        margin-bottom: -20px;
+    }
+
+    .bl_cardUnit > .bl_card {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    /*=====モジュール カード 4カラム=====*/
+    .bl_cardUnit.bl_cardUnit__col4 {
+        margin-bottom: -20px;
+    }
+
+    /*=====モジュール テーブル水平 メディアクエリ時のスクロール=====*/
+    /* overflow-x:auto;で横スクロールを実現し、
+       border-right-width:0;で右縦線を消し横スクロールできるこを示す */
+    .bl_horizontalTable.bl_horizontalTable__mdScroll {
+        border-right-width: 0;
+        overflow-x: auto;
+    }
+
+    /* 見出しとセルそれぞれのテキストを折り返さないようにするための指定 */
+    .bl_horizontalTable.bl_horizontalTable__mdScroll th,
+    .bl_horizontalTable.bl_horizontalTable__mdScroll td {
+        white-space: nowrap;
+    }
+
+    /* ラッパーモジュールのborder-right-width:0;で消した各行の右縦線を、
+       tdに指定して書き足す */
+    .bl_horizontalTable.bl_horizontalTable__mdScroll td {
+        border-right: 1px solid #ddd;
+    }
+
+    /*=====モジュール テーブル垂直 メディアクエリ時のスクロール=====*/
+    /* overflow-x:auto;で横スクロールを実現し、
+       border-right-width:0;で右縦線を消し横スクロールできるこを示す */
+    .bl_verticalTable {
+        border-right-width: 0;
+        overflow-x: auto;
+    }
+
+
+    .bl_verticalTable table {
+        width: auto;
+        min-width: 100%;
+    }
+
+    /* 見出しとセルそれぞれのテキストを折り返さないようにするための指定 */
+    .bl_verticalTable th,
+    .bl_verticalTable td {
+        white-space: nowrap;
+    }
+
+    /* 外枠のborder-right-width:0;で消した右縦線を、
+       thとtdの最後に指定してスクロール先で表示させる */
+    .bl_verticalTable th:last-child,
+    .bl_verticalTable td:last-child {
+        border-right-width: 1px;
+    }
+
+    /*=====モジュール テーブル交差 メディアクエリ時のスクロール=====*/
+    /* overflow-x:auto;で横スクロールを実現し、
+       border-right-width:0;で右縦線を消し横スクロールできるこを示す */
+    .bl_crossTable {
+        border-right-width: 0;
+        overflow-x: auto;
+    }
+
+    .bl_crossTable table {
+        width: auto;
+        min-width: 100%;
+    }
+
+    /* 見出しとセルそれぞれのテキストを折り返さないようにするための指定 */
+    .bl_crossTable th,
+    .bl_crossTable td {
+        white-space: nowrap;
+    }
+
+    /* 外枠のborder-right-width:0;で消した右縦線を、
+       thとtdの最後に指定してスクロール先で表示させる */
+    .bl_crossTable th:last-child,
+    .bl_crossTable td:last-child {
+        border-right-width: 1px;
+    }
+
+    /*メディアクエリで固定したい見出し用のクラス指定
+      特定の位置に固定して表示を指定*/
+    .bl_crossTable_mdSticky {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+    }
+
+    /*=====モジュール タブナビゲーション=====*/
+    /* overflow-x:auto;で横スクロールを実現*/
+    .bl_tabNav {
+        overflow-x: auto;
+    }
+
+    .bl_tabNav_inner {
+        flex-wrap: nowrap;/*水平スクロール*/
+        justify-content: flex-start;/*水平スクロールでアクセスできなくなるコンテンツを解消*/
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    /*=====料金表=====*/
+    .bl_priceUnit {
+        display: block;
+    }
+
+    .bl_priceUnit .bl_price {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .bl_priceUnit .bl_price:last-child {
+        margin-bottom: 0;
+    }
+
+    /*=====料金表テーブル バリエーション=====*/
+    /*ヘルパークラス*/
+    .md_only {
+        display: block !important;
+    }
+
+    /* overflow-x:auto;で横スクロールを実現*/
+    .bl_priceTable {
+        overflow-x: auto;
+    }
+
+    .bl_priceTable table {
+        width: auto;
+        white-space: nowrap;
+    }
+
+    /*メディアクエリで固定したい見出し用のクラス指定
+      特定の位置に固定して表示を指定*/
+    .bl_priceTable_bodyTtl {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        background-color: #fff;
+        /*margin-rightで指定するとスクロールした際に右縦線が消えるので
+          box-shadowで指定し表示*/
+        box-shadow: 1px 0 #ddd;
+        font-size: .875rem;
+    }
+
+    /*ジャンボトロン*/
+    .lg_only {
+        display: none !important;
+    }
+
+    .bl_jumbotron {
+        height: 300px;
+    }
+
+    .bl_jumbotron_ttl {
+        left: 50%;
+        width: 90%;
+        padding: 15px;
+        font-size: 1.25rem;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+}

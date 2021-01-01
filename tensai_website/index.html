@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <title>テンプレート</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--FontAwesomeCDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--以下PRECSSで記述します-->
+    <!--ヘッダー外側にあたる要素 ly_header -->
+    <header class="ly_header">
+        <!--ヘッダー内側にあたる要素 ly_header -->
+        <div class="ly_header_inner">
+            <!--ヘッダー内側のロゴアイコンとボタン -->
+            <div class="bl_headerUtils">
+                <a class="bl_headerUtils_logo" href="#"><img src="./assets/img/elements/header-icon.png" alt="ヘッダーアイコン"></a>
+                <a class="el_btn" href="#">お問い合わせ</a>
+            </div>
+            <!--ヘッダー内側のロゴアイコンとボタン /.bl_headerUtils -->
+            <!--ヘッダー内側のナビゲーション -->
+            <nav>
+                <ul class="bl_headerNav">
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">私たちの特徴</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">サービス</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">制作実績</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">会社情報</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">採用情報</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#">ブログ</a></li>
+                </ul>
+            </nav>
+            <!--ヘッダー内側のナビゲーション / -->
+        </div>
+        <!--ヘッダー内側にあたる要素 /.ly_header_inner -->
+    </header>
+    <!--ヘッダー外側にあたる要素 ly_header -->
+    <main class="ly_cont">
+
+        <!--モジュール メディア-->
+        <div class="bl_media">
+            <figure class="bl_media_imgWrapper">
+                <img src="./assets/img/elements/persona.jpg" alt="スマホ画像">
+            </figure>
+            <div class="bl_media_body">
+                <h3 class="bl_media_ttl">ユーザーを考えた設計で満足な体験を</h3>
+                <p class="bl_media_txt">
+                    提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br>
+                    わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+                </p>
+            </div>
+        </div>
+        <!--モジュール メディア 逆位置-->
+        <div class="bl_media bl_media__rev">
+            <figure class="bl_media_imgWrapper">
+                <img src="./assets/img/elements/persona.jpg" alt="スマホ画像">
+            </figure>
+            <div class="bl_media_body">
+                <h3 class="bl_media_ttl">ユーザーを考えた設計で満足な体験を</h3>
+                <p class="bl_media_txt">
+                    提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br>
+                    わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+                </p>
+            </div>
+        </div>
+        <!--画像半分サイズはよく使うので、class名をbl_harlMediaにして別モジュールを作る-->
+        <div class="bl_halfMedia">
+            <figure class="bl_halfMedia_imgWrapper">
+                <img src="./assets/img/elements/persona.jpg" alt="スマホ画像">
+            </figure>
+            <div class="bl_halfMedia_body">
+                <h3 class="bl_halfMedia_ttl">ユーザーを考えた設計で満足な体験を</h3>
+                <p class="bl_halfMedia_txt">
+                    提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br>
+                    わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+                </p>
+            </div>
+        </div>
+        <!--モジュール カード-->
+        <div class="bl_card">
+            <figure class="bl_card_imgWrapper">
+                <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+            </figure>
+            <div class="bl_card_body">
+                <h3 class="bl_card_ttl">Webサイト制作</h3>
+                <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+            </div>
+        </div>
+
+        <!--モジュール カード バッヂ付き-->
+        <div class="bl_card">
+            <b class="bl_card_badge">
+                <span class="bl_card_badge_txt">New</span>
+            </b>
+            <figure class="bl_card_imgWrapper">
+                <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+            </figure>
+            <div class="bl_card_body">
+                <h3 class="bl_card_ttl">Webサイト制作</h3>
+                <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+            </div>
+        </div>
+
+        <!--モジュール カード リンク-->
+        <a class="bl_card" href="#">
+            <figure class="bl_card_imgWrapper">
+                <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+            </figure>
+            <div class="bl_card_body">
+                <h3 class="bl_card_ttl">Webサイト制作</h3>
+                <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+            </div>
+        </a>
+
+        <!--モジュール カード 3カラム-->
+        <div class="bl_cardUnit bl_cardUnit__col3">
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">Webサイト制作</h3>
+                    <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+                </div>
+            </div>
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/marketing.jpg" alt="SNSアイコンが写っている画面">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">デジタルマーケティング支援</h3>
+                    <p class="bl_card_txt">自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。</p>
+                </div>
+            </div>
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/analysis.jpg" alt="解析レポート画像">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">解析・レポーティング</h3>
+                    <p class="bl_card_txt">ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。</p>
+                </div>
+            </div>
+        </div>
+
+        <!--モジュール カード 4カラム-->
+        <div class="bl_cardUnit bl_cardUnit__col4">
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">Webサイト制作</h3>
+                    <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+                </div>
+            </div>
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/marketing.jpg" alt="SNSアイコンが写っている画面">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">デジタルマーケティング支援</h3>
+                    <p class="bl_card_txt">自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。</p>
+                </div>
+            </div>
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/analysis.jpg" alt="解析レポート画像">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">解析・レポーティング</h3>
+                    <p class="bl_card_txt">ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。</p>
+                </div>
+            </div>
+            <div class="bl_card">
+                <figure class="bl_card_imgWrapper">
+                    <img src="./assets/img/elements/global.jpg" alt="夜景の画像">
+                </figure>
+                <div class="bl_card_body">
+                    <h3 class="bl_card_ttl">多言語webサイト構築</h3>
+                    <p class="bl_card_txt">グローバル視点での戦略から、構築まで一貫してサポートします。</p>
+                </div>
+            </div>
+        </div>
+
+        <!--モジュール テーブル水平-->
+        <div class="bl_horizontalTable">
+            <table>
+                <tbody>
+                    <tr>
+                        <!--table row 表に行を1行作成-->
+                        <th>名前</th>
+                        <!--table head 表の見出し-->
+                        <td>半田 惇志</td>
+                        <!--table date 表の中身になるセル-->
+                    </tr>
+                    <tr>
+                        <th>所属</th>
+                        <td>株式会社24-7／株式会社パンセ
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>職種</th>
+                        <td>テクニカルディレクター／シニアエンジニア
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>得意分野</th>
+                        <td>CSS設計、HubSpot CMS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--モジュール テーブル水平 メディアクエリ時の横スクロール-->
+        <div class="bl_horizontalTable bl_horizontalTable__mdScroll">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>名前</th>
+                        <td>半田 惇志</td>
+                    </tr>
+                    <tr>
+                        <th>所属</th>
+                        <td>株式会社24-7／株式会社パンセ
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>職種</th>
+                        <td>テクニカルディレクター／シニアエンジニア
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>得意分野</th>
+                        <td>CSS設計、HubSpot CMS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--モジュール テーブル垂直-->
+        <div class="bl_verticalTable">
+            <table>
+                <thead>
+                    <!--テーブルの見出し-->
+                    <th>名前</th>
+                    <!--table head 表の見出し-->
+                    <th>所属</th>
+                    <th>職種</th>
+                    <th>得意分野</th>
+                </thead>
+                <tbody>
+                    <!--テーブルの見出し以外の中身-->
+                    <tr>
+                        <!--table row 表に行を1行作成-->
+                        <td>半田 惇志</td>
+                        <!--table date 表の中身になるセル-->
+                        <td>株式会社24-7／株式会社パンセ</td>
+                        <td>テクニカルディレクター／シニアエンジニア</td>
+                        <td>CSS設計、HubSpot CMS</td>
+                    </tr>
+                    <tr>
+                        <td>長澤 賢</td>
+                        <td>株式会社パンセ</td>
+                        <td>エンジニア </td>
+                        <td>Vue.js/Nuxt.js</td>
+                    </tr>
+                    <tr>
+                        <td>海老江 優太 </td>
+                        <td>株式会社パンセ</td>
+                        <td>エンジニア</td>
+                        <td>Adobe XD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--モジュール テーブル 交差-->
+        <div class="bl_crossTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="bl_crossTable_mdSticky">名前</th>
+                        <th>所属</th>
+                        <th>職種</th>
+                        <th>得意分野</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="bl_crossTable_mdSticky">半田 惇志</th>
+                        <td>株式会社24-7／株式会社パンセ</td>
+                        <td>テクニカルディレクター／シニアエンジニア</td>
+                        <td>CSS設計、HubSpot CMS</td>
+                    </tr>
+                    <tr>
+                        <th class="bl_crossTable_mdSticky">長澤 賢</th>
+                        <td>株式会社パンセ</td>
+                        <td>エンジニア </td>
+                        <td>Vue.js/Nuxt.js</td>
+                    </tr>
+                    <tr>
+                        <th class="bl_crossTable_mdSticky">海老江 優太 </th>
+                        <td>株式会社パンセ</td>
+                        <td>エンジニア</td>
+                        <td>Adobe XD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--ページャー-->
+        <nav class="bl_pager">
+            <ul class="bl_pager_inner">
+                <li>
+                    <a class="bl_pager_link" href="#">
+                        <i class="fas fa-angle-double-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="bl_pager_link" href="#">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="bl_pager_link is_active">1</span>
+                </li>
+                <li>
+                    <a class="bl_pager_link" href="#">2</a>
+                </li>
+                <li>
+                    <a class="bl_pager_link" href="#">3</a>
+                </li>
+                <li>
+                    <a class="bl_pager_link" href="#">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="bl_pager_link" href="#">
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--タブナビゲーション-->
+        <nav class="bl_tabNav">
+            <ul class="bl_tabNav_inner">
+                <li>
+                    <span class="bl_tabNav_link is_active">契約・手続きについて</span>
+                </li>
+                <li>
+                    <a class="bl_tabNav_link" href="#">製品について</a>
+                </li>
+                <li>
+                    <a class="bl_tabNav_link" href="#">キャンペーンについて</a>
+                </li>
+                <li>
+                    <a class="bl_tabNav_link" href="#">会員機能について</a>
+                </li>
+                <li>
+                    <a class="bl_tabNav_link" href="#">各種お手続きについて</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--CTA は Call To Action の略で、ユーザーの具体的な行動換気するためのインターフェイス-->
+        <div class="bl_cta">
+            <h2 class="bl_cta_ttl">お気軽にお問い合わせください</h2>
+            <p class="bl_cta_txt">弊社のサービスや製品のことで気になることがございましたら、お気軽にお問い合わせください<br>
+                <a href="#">→お問い合わせする</a>
+            </p>
+        </div>
+
+        <!--料金表-->
+        <!--ラッパーモジュール-->
+        <ul class="bl_priceUnit">
+            <!--各プランのコンテンツ-->
+            <li class="bl_price">
+                <div class="bl_price_header">
+                    <p class="bl_price_ttl">
+                        STARTER
+                    </p>
+                    <p class="bl_price_price">
+                        6,000
+                        <span>円/月</span>
+                    </p>
+                </div>
+                <div class="bl_price_body">
+                    <p class="bl_price_lead">
+                        初めてインバウンドマーケティングを行う企業向けのスタートアッププラン
+                    </p>
+                    <!--description list-->
+                    <dl class="bl_price_features">
+                        <!--description term-->
+                        <dt>費用に含まれるコンタクト数</dt>
+                        <!--definition or description-->
+                        <dd>1,000件</dd>
+                        <dt>月間サイト訪問者数</dt>
+                        <dd>3,000</dd>
+                        <dt>月間Eメール送信数上限</dt>
+                        <dd>最大コンタクト数の5倍</dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="bl_price">
+                <div class="bl_price_header">
+                    <p class="bl_price_ttl">
+                        PRO
+                    </p>
+                    <p class="bl_price_price">
+                        96,000
+                        <span>円/月</span>
+                    </p>
+                </div>
+                <div class="bl_price_body">
+                    <p class="bl_price_lead">
+                        マーケティング担当者の欲しい機能が網羅されたおすすめプラン
+                    </p>
+                    <dl class="bl_price_features">
+                        <dt>費用に含まれるコンタクト数</dt>
+                        <dd>1,000件</dd>
+                        <dt>月間サイト訪問者数</dt>
+                        <dd>無制限</dd>
+                        <dt>月間Eメール送信数上限</dt>
+                        <dd>最大コンタクト数の10倍</dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="bl_price">
+                <div class="bl_price_header">
+                    <p class="bl_price_ttl">
+                        ENTERPRISE
+                    </p>
+                    <p class="bl_price_price">
+                        384,000
+                        <span>円/月</span>
+                    </p>
+                </div>
+                <div class="bl_price_body">
+                    <p class="bl_price_lead">
+                        マーケティングチームでインバウンドマーケティングを行える高機能プラン
+                    </p>
+                    <dl class="bl_price_features">
+                        <dt>費用に含まれるコンタクト数</dt>
+                        <dd>10,000件</dd>
+                        <dt>月間サイト訪問者数</dt>
+                        <dd>無制限</dd>
+                        <dt>月間Eメール送信数上限</dt>
+                        <dd>最大コンタクト数の10倍</dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+
+        <!--料金表テーブル バリエーション-->
+        <!--ラッパーモジュール-->
+        <div class="bl_priceTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th class="bl_priceTable_header">
+                            <p class="bl_priceTable_headerTtl">
+                                STARTER
+                            </p>
+                            <p class="bl_priceTable_price">
+                                6,000
+                                <span>円/月</span>
+                            </p>
+                        </th>
+                        <th class="bl_priceTable_header">
+                            <p class="bl_priceTable_headerTtl">
+                                PRO
+                            </p>
+                            <p class="bl_priceTable_price">
+                                96,000
+                                <span>円/月</span>
+                            </p>
+                        </th>
+                        <th class="bl_priceTable_header">
+                            <p class="bl_priceTable_headerTtl">
+                                ENTERPRISE
+                            </p>
+                            <p class="bl_priceTable_price">
+                                384,000
+                                <span>円/月</span>
+                            </p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="bl_priceTable_bodyTtl">費用に含まれる<br class="md_only">コンタクト数</th>
+                        <td>1,000件</td>
+                        <td>1,000件</td>
+                        <td>1,000件</td>
+                    </tr>
+                    <tr>
+                        <th class="bl_priceTable_bodyTtl">月間サイト<br class="md_only">訪問者数</th>
+                        <td>3,000</td>
+                        <td>無制限</td>
+                        <td>無制限</td>
+                    </tr>
+                    <tr>
+                        <th class="bl_priceTable_bodyTtl">月間Eメール<br class="md_only">送信数上限</th>
+                        <td>最大コンタクト数の5倍</td>
+                        <td>最大コンタクト数の10倍</td>
+                        <td>最大コンタクト数の10倍</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--FAQ-->
+        <dl class="bl_faq">
+            <dt class="bl_faq_q">
+                <span class="bl_faq_icon">Q</span>
+                <span class="bl_faq_q_txt">どのようなCMS開発の実績がありますか？</span>
+            </dt>
+            <dd class="bl_faq_a">
+                <span class="bl_faq_icon">A</span>
+                <!--このdivをつけることで、pを下に追加してもddで指定したdisplay:flex;でpが横並びにならない-->
+                <div class="bl_faq_a_body">
+                    <p class="bl_faq_a_txt">
+                        WordPress、Movable Type、HubSpot CMS、Sitecoreの開発実績がございます。
+                    </p>
+                </div>
+            </dd>
+            <dt class="bl_faq_q">
+                <span class="bl_faq_icon">Q</span>
+                <span class="bl_faq_q_txt">普段使用しているCSSの設計手法を教えてください</span>
+            </dt>
+            <dd class="bl_faq_a">
+                <span class="bl_faq_icon">A</span>
+                <div class="bl_faq_a_body">
+                    <p class="bl_faq_a_txt">
+                        OOCSSをはじめ、SMACSS、BEM、FLOCSS、PRECSSなど一通り対応可能です。どの手法を使用するかは、案件の特性を考慮し都度選定しています。
+                    </p>
+                </div>
+            </dd>
+        </dl>
+
+        <!--アコーディオン-->
+        <dl class="bl_accordion">
+            <dt>
+                <!--クリックできることを示すためにbuttom要素を用いる-->
+                <button class="bl_accordion_btn" type="button">どのようなCMS開発の実績がありますが?</button>
+            </dt>
+            <dd class="bl_accordion_body">
+                <p class="bl_accordion_txt">WordPress、Movable Type、HubSpot CMS、Sitecoreの開発実績がございます。</p>
+            </dd>
+            <dt>
+                <button class="bl_accordion_btn is_active" type="button">どのようなCMS開発の実績がありますが?</button>
+            </dt>
+            <dd class="bl_accordion_body is_active">
+                <p class="bl_accordion_txt">WordPress、Movable Type、HubSpot CMS、Sitecoreの開発実績がございます。</p>
+            </dd>
+        </dl>
+
+        <!--ジャンボトロン-->
+        <!--背景画像が増えた場合、HTMLへモディファイアの追加とCSSへスタイリングの追加の手間が増えるので、
+            HTMLにstyle要素でbackground-imageを指定-->
+        <div class="bl_jumbotron" style="background-image:url('./assets/img/elements/dots.jpg');">
+            <div class="bl_jumbotron_inner">
+                <p class="bl_jumbotron_ttl">
+                    貴社のビジネスに適切な戦略をご提案し
+                    <br class="lg_only">
+                    「成果」に貢献いたします。
+                </p>
+            </div>
+        </div>
+
+        <!--ポストリスト-->
+        <!--bl_vertPostsというクラス命名 (vertはvertical=垂直の省略形)-->
+        <ul class="bl_vertPosts">
+            <li class="bl_vertPosts_item">
+                <!--のちに日付の後にラベルを付けるのでdiv要素を設置-->
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-29">2020/03/29</time>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">【多言語サイトを構築する】 ①対象言語・地域とURL方式の選定</a>
+            </li>
+            <li class="bl_vertPosts_item">
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-28">2020/03/28</time>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">打ち合わせアポをスムーズに！ビジネスで使える日程調整ツール4選</a>
+            </li>
+            <li class="bl_vertPosts_item">
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-27">2020/03/27</time>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">BtoB向けコンテンツマーケティング戦略におけるLinkedIn活用術</a>
+            </li>
+        </ul>
+
+        <!--順序なしリスト-->
+        <ul class="bl_bulletList">
+            <li>webコンサルティング</li>
+            <li>デジタルマーケティング支援</li>
+            <li>CMS構築</li>
+            <li>CSS設計</li>
+        </ul>
+
+        <!--順序なしリスト 横並び 拡張パターン-->
+        <!--horizはhorizontal=水平の省略形)-->
+        <ul class="bl_bulletList bl_bulletList__horiz">
+            <li>webコンサルティング</li>
+            <li>デジタルマーケティング支援</li>
+            <li>CMS構築</li>
+            <li>CSS設計</li>
+        </ul>
+
+        <!--順序なしリスト ネスト バリエーション-->
+        <ul class="bl_bulletList">
+            <li>webコンサルティング</li>
+            <li>デジタルマーケティング支援</li>
+            <li>CMS構築</li>
+            <li>
+                CSS設計
+                <ul>
+                    <li>BEM</li>
+                    <li>FLOCSS</li>
+                    <li>PRECSS</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--順序ありリスト-->
+        <ol class="bl_orderList">
+            <li>webコンサルティング</li>
+            <li>デジタルマーケティング支援</li>
+            <li>CMS構築</li>
+            <li>CSS設計</li>
+        </ol>
+
+        <!--順序ありリスト ネスト バリエーション-->
+        <ol class="bl_orderList">
+            <li>webコンサルティング</li>
+            <li>デジタルマーケティング支援</li>
+            <li>CMS構築</li>
+            <li>
+                CSS設計
+                <ol>
+                    <li>BEM</li>
+                    <li>FLOCSS</li>
+                    <li>PRECSS</li>
+                </ol>
+            </li>
+        </ol>
+
+        <!--モジュールの再利用(最小モジュールを利用した複合モジュールの作成)-->
+        <!--水平ボタンリスト-->
+        <ul class="bl_horizBtnList">
+            <li>
+                <a class="el_btn el_btn__yellow" href="#">戻る</a>
+            </li>
+            <li>
+                <a class="el_btn" href="#">進む</a>
+            </li>
+        </ul>
+
+        <!--モジュールの再利用(最小モジュール + 複合モジュール)-->
+        <!--ボタン+画像半分サイズメディア-->
+        <div class="bl_halfMedia">
+            <figure class="bl_halfMedia_imgWrapper">
+                <img src="/./assets/img/elements/persona.jpg" alt="#">
+            </figure>
+            <div class="bl_halfMedia_body">
+                <h3 class="bl_halfMedia_ttl">
+                    ユーザーを考えた設計で満足な体験を
+                </h3>
+                <p class="bl_halfMedia_txt">
+                    提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br>
+                    わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+                </p>
+                <a class="el_btn el_btn__arrowRight" href="#">戦略策定サービスについて</a>
+            </div>
+        </div>
+
+        <!--モジュールの再利用(最小モジュール + 複合モジュール)-->
+        <!--ボタン + CTAエリア-->
+        <div class="bl_cta">
+            <h2 class="bl_cta_ttl">お気軽にお問い合わせください</h2>
+            <p class="bl_cta_txt">弊社のサービスや製品のことで気になることがございましたら、お気軽にお問い合わせください<br>
+            </p>
+            <a class="el_btn" href="#">問い合わせする</a>
+        </div>
+
+        <!--モジュールの再利用(最小モジュール + 複合モジュール)-->
+        <!--ラベル + ポストリスト-->
+        <!--bl_vertPostsというクラス命名 (vertはvertical=垂直の省略形)-->
+        <ul class="bl_vertPosts">
+            <li class="bl_vertPosts_item">
+                <!--のちに日付の後にラベルを付けるのでdiv要素を設置-->
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-29">2020/03/29</time>
+                    <ul class="bl_vertPosts_labels">
+                        <li>
+                            <span class="el_label">海外向けマーケティング</span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">【多言語サイトを構築する】 ①対象言語・地域とURL方式の選定</a>
+            </li>
+            <li class="bl_vertPosts_item">
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-28">2020/03/28</time>
+                    <ul class="bl_vertPosts_labels">
+                        <li>
+                            <span class="el_label el_label__yellow">お役立ちツール</span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">打ち合わせアポをスムーズに！ビジネスで使える日程調整ツール4選</a>
+            </li>
+            <li class="bl_vertPosts_item">
+                <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="2020-03-27">2020/03/27</time>
+                    <ul class="bl_vertPosts_labels">
+                        <li>
+                            <span class="el_label">海外向けマーケティング</span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="bl_vertPosts_ttl" href="#">BtoB向けコンテンツマーケティング戦略におけるLinkedIn活用術</a>
+            </li>
+        </ul>
+
+        <!--モジュールの再利用(最小モジュール + 複合モジュール)-->
+        <!--FAQ + リスト-->
+        <dl class="bl_faq">
+            <dt class="bl_faq_q">
+                <span class="bl_faq_icon">Q</span>
+                <span class="bl_faq_q_txt">どのCMSの開発やCSS設計に対応していますか？</span>
+            </dt>
+            <dd class="bl_faq_a">
+                <span class="bl_faq_icon">A</span>
+                <!--このdivをつけることで、pを下に追加してもddで指定したdisplay:flex;でpが横並びにならない-->
+                <div class="bl_faq_a_body">
+                    <p class="bl_faq_a_txt">
+                        それぞれ以下の開発実績がございます。
+                    </p>
+                    <ul class="bl_bulletList">
+                        <li>
+                            CMS構築
+                            <ul>
+                                <li>WordPress</li>
+                                <li>Movable Type</li>
+                                <li>HubSpot</li>
+                                <li>Sitecore</li>
+                            </ul>
+                        </li>
+                        <li>
+                            CSS設計
+                            <ul>
+                                <li>BEM</li>
+                                <li>FLOCSS</li>
+                                <li>PRECSS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+
+        <!--モジュールの再利用(最小モジュール + 複合モジュール)-->
+        <!--アコーディオン + カード + CTAエリア-->
+        <dl class="bl_accordion">
+            <dt>
+                <!--クリックできることを示すためにbuttom要素を用いる-->
+                <button class="bl_accordion_btn is_active" type="button">サービスのご紹介</button>
+            </dt>
+            <dd class="bl_accordion_body is_active">
+                <p class="bl_accordion_txt">弊社では下記のサービスを主軸とし、これらにまつわる周辺業務も提供しております。</p>
+                <div class="bl_cardUnit bl_cardUnit__col3">
+                    <div class="bl_card">
+                        <figure class="bl_card_imgWrapper">
+                            <img src="./assets/img/elements/code.jpg" alt="コードの画像">
+                        </figure>
+                        <div class="bl_card_body">
+                            <h3 class="bl_card_ttl">Webサイト制作</h3>
+                            <p class="bl_card_txt">ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。</p>
+                        </div>
+                    </div>
+                    <div class="bl_card">
+                        <figure class="bl_card_imgWrapper">
+                            <img src="./assets/img/elements/marketing.jpg" alt="SNSアイコンが写っている画面">
+                        </figure>
+                        <div class="bl_card_body">
+                            <h3 class="bl_card_ttl">デジタルマーケティング支援</h3>
+                            <p class="bl_card_txt">自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。</p>
+                        </div>
+                    </div>
+                    <div class="bl_card">
+                        <figure class="bl_card_imgWrapper">
+                            <img src="./assets/img/elements/analysis.jpg" alt="解析レポート画像">
+                        </figure>
+                        <div class="bl_card_body">
+                            <h3 class="bl_card_ttl">解析・レポーティング</h3>
+                            <p class="bl_card_txt">ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_cta">
+                    <h2 class="bl_cta_ttl">お気軽にお問い合わせください</h2>
+                    <p class="bl_cta_txt">弊社のサービスや製品のことで気になることがございましたら、お気軽にお問い合わせください<br>
+                    </p>
+                    <a class="el_btn" href="#">問い合わせする</a>
+                </div>
+            </dd>
+        </dl>
+
+    </main>
+    <footer>
+        <div class="ly_footer"><!--外側にあたる要素 ly_footer_inner -->
+            <div class="ly_footer_inner"><!--内側にあたる要素 ナビゲーション ly_footer_inner -->
+                <nav>
+                    <ul class="bl_footerNav">
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">私たちの特徴</a>
+                            <ul class="bl_footerChildNav">
+                              <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#">私たちの強み</a>
+                              </li>
+                              <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#">私たちのポリシー</a>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">サービス</a>
+                            <ul class="bl_footerChildNav">
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">Webサイト改善</a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">解析・レポーティング</a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                    <a class="bl_footerChildNav_link" href="#">多言語Webサイト構築</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">制作実績</a>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">会社情報</a>
+                            <ul class="bl_footerChildNav">
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">メッセージ</a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">会社概要</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">採用情報</a>
+                            <ul class="bl_footerChildNav">
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">新卒採用</a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                  <a class="bl_footerChildNav_link" href="#">中途採用</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#">ブログ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--内側にあたる要素 /.ly_footer_inner-->
+        </div>
+        <!--外側にあたる要素 /.ly_footer-->
+        <!--外側にあたる要素 ボーダー -->
+        <div class="ly_footer hp_btGray">
+            <!--内側にあたる要素 Copyright-->
+            <div class="ly_footer_inner">
+                <small class="el_footerCopyright">© 2019 Triad Inc.</small>
+            </div>
+            <!--内側にあたる要素 Copyright /.ly_footer_inner-->
+        </div>
+        <!--外側にあたる要素 ボーダー /.ly_footer hp_btGray-->
+    </footer>
+</body>
+
+</html>
