@@ -47,6 +47,18 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+
+/*=================================================
+レイアウト セクション
+===================================================*/
+
+.ly_section {
+    margin-top: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+    
+}
+
 /*=================================================
 レイアウト フッター
 ===================================================*/
@@ -78,15 +90,16 @@ img {
 }
 
 .bl_headerUtils_logo {
-    width: 150px;
+    width: 120px;
 }
 
 .bl_headerUtils .el_btn {
     width: auto;
     padding: 10px 20px;
     box-shadow: none;
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     color: #fff;
+    border-radius: 5px;
 }
 
 .bl_headerNav {
@@ -132,6 +145,136 @@ img {
 /*==================================
 モジュール
 ==================================*/
+
+/*==================================
+モジュール メインビジュアル
+==================================*/
+.bl_mv {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+/* padding-top:56.25%;で画像の縦横比をおおよそ16:9にする指定 */
+.bl_mv_imgWrapper {
+    position: relative;
+    padding-top: 56.25%;
+    /* bl_card_imgWrapper > imgで指定する画像が溢れないための指定 */
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* 画像を天地中央揃えで、なおかつ横幅いっぱいにする指定 */
+.bl_mv_imgWrapper > img {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.bl_mv_body {
+    padding: 15px;
+}
+
+.bl_mv_body > *:last-child {
+    margin-bottom: 0;
+}
+
+.bl_mv_ttl {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.bl_mv_txt {
+    color: #777;
+}
+
+/*==================================
+モジュール News
+==================================*/
+.el_lv2Heading {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #4AC6A1;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bl_news {
+    list-style-type: none
+}
+
+.bl_news_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bl_news_item:first-child {
+    padding-top:0
+}
+
+.bl_news_header {
+    margin-bottom: 10px;
+}
+
+.bl_news_date {
+    font-size: .875rem;
+}
+
+.bl_news_ttl {
+    text-decoration: none;
+}
+
+.bl_news_ttl:focus,
+.bl_news_ttl:hover {
+    text-decoration: underline;
+}
+
+
+/* sns_link */
+.el_sns_link {
+    color: #777;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.el_sns_link:last-child {
+    margin-right: 0;
+}
+
+.fa {
+    margin-top: 10px;
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #C02297;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-instagram:before {
+    content: "\f16d";
+}
+.fa-twitter:focus, 
+.fa-twitter:hover, 
+.fa-instagram:focus, 
+.fa-instagram:hover {
+    opacity: .5;
+}
 
 /*==================================
 モジュール メディア
@@ -945,40 +1088,6 @@ FAQ
 }
 
 /*==================================
-ポストリスト
-==================================*/
-.bl_vertPosts {
-    list-style-type: none
-}
-
-.bl_vertPosts_item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.bl_vertPosts_item:first-child {
-    padding-top:0
-}
-
-.bl_vertPosts_header {
-    margin-bottom: 10px;
-}
-
-.bl_vertPosts_date {
-    font-size: .875rem;
-}
-
-.bl_vertPosts_ttl {
-    text-decoration: none;
-}
-
-.bl_vertPosts_ttl:focus,
-.bl_vertPosts_ttl:hover {
-    text-decoration: underline;
-}
-
-/*==================================
 順序なしリスト
 ==================================*/
 .bl_bulletList {
@@ -1141,6 +1250,7 @@ FAQ
     justify-content: center;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 /*======================================
