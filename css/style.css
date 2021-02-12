@@ -128,7 +128,7 @@ img {
 
 .bl_headerNav_link:focus,
 .bl_headerNav_link:hover {
-    border-bottom-color: #e25c00;
+    border-bottom-color: #4AC6A1;
 }
 
 .bl_headerNav_link::after {
@@ -437,7 +437,7 @@ img {
     /* バッチの三角形を描画する */
     border-width: 3.75rem 3.75rem 0 0;
     border-style: solid;
-    border-color: #e25c00 transparent transparent transparent;
+    border-color: #4AC6A1 transparent transparent transparent;
 }
 
 .bl_card_badge_txt {
@@ -476,7 +476,7 @@ a.bl_card:focus .bl_card_ttl,
 a.bl_card:focus .bl_card_txt,
 a.bl_card:hover .bl_card_ttl,
 a.bl_card:hover .bl_card_txt {
-    color: #e25c00;
+    color: #4AC6A1;
     text-decoration: underline;
 }
 
@@ -671,20 +671,20 @@ a.bl_card:hover .bl_card_txt {
     width: 40px;
     height: 40px;
     border: 1px solid currentColor;
-    color: #e25c00;
+    color: #4AC6A1;
     text-decoration: none;
     transition: .25s;
 }
 
 .bl_pager_link:focus,
 .bl_pager_link:hover {
-  background-color: #e25c00;
+  background-color: #4AC6A1;
   color: #fff;
   opacity: .75;
 }
 
 .bl_pager_link.is_active {
-  background-color: #e25c00;
+  background-color: #4AC6A1;
   color: #fff;
   pointer-events: none;
 }
@@ -716,13 +716,13 @@ a.bl_card:hover .bl_card_txt {
 .bl_tabNav_link:focus,
 .bl_tabNav_link:hover {
     border-bottom-color: currentColor;
-    color: #e25c00;
+    color: #4AC6A1;
     opacity: .75;
 }
 
 .bl_tabNav_link.is_active {
     border-bottom-color: currentColor;
-    color: #e25c00;
+    color: #4AC6A1;
     pointer-events: none;
 }
 
@@ -732,7 +732,7 @@ CTA
 .bl_cta {
     padding: 30px;
     background-color: rgba(221, 116, 44, .05);
-    border: 1px solid #e25c00;
+    border: 1px solid #4AC6A1;
     text-align: center;
 }
 
@@ -745,7 +745,7 @@ CTA
     margin-top: -6px;
     margin-bottom: 40px;
     border-bottom: 1px solid currentColor;
-    color: #e25c00;
+    color: #4AC6A1;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -778,7 +778,7 @@ CTA
 
 .bl_price_header {
     padding: 10px;
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     color: #fff;
     text-align: center;
 }
@@ -841,7 +841,7 @@ CTA
 
 .bl_priceTable_header {
     padding: 10px;
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     border-right: 1px solid currentColor;
     color: #fff;
     text-align: center;
@@ -942,13 +942,13 @@ FAQ
 }
 
 .bl_faq_q .bl_faq_icon {
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     color: #fff;
 }
 
 .bl_faq_a .bl_faq_icon {
     background: #efefef;
-    color: #e25c00;
+    color: #4AC6A1;
 }
 
 /*頭揃えで上に寄った分の余白を下げる指定*/
@@ -981,8 +981,8 @@ FAQ
     display: block;
     width: 100%;
     padding:10px 40px 10px 15px ;
-    background-color: #e25c00;
-    border: 2px solid #e25c00;
+    background-color: #4AC6A1;
+    border: 2px solid #4AC6A1;
     color: #fff;
     font-size: 1.125rem;
     text-align: left;
@@ -1025,7 +1025,7 @@ FAQ
 .bl_accordion_btn:focus,
 .bl_accordion_btn:hover {
     background-color: #fff;
-    color: #e25c00;
+    color: #4AC6A1;
 }
 
 /*タイトルがアクティブ時に縦棒が消えて横棒だけ残る指定*/
@@ -1116,7 +1116,7 @@ FAQ
     display: block;
     width: .4em;
     height: .4em;
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     border-radius: 50%;
 }
 
@@ -1185,7 +1185,7 @@ FAQ
     position: absolute;
     top: 0;
     left: 0;
-    color: #e25c00;
+    color: #4AC6A1;
     font-weight: bold;
     /*カウンターの数値を1足す指定*/
     counter-increment: bl_orderList;
@@ -1220,7 +1220,7 @@ FAQ
     position: absolute;
     top: 0;
     left: 0;
-    color: #e25c00;
+    color: #4AC6A1;
     /*カウンターの数値を1足す指定*/
     counter-increment: bl_childOrderList;
 }
@@ -1302,7 +1302,7 @@ FAQ
 .bl_cta {
     padding: 30px;
     background-color: rgba(221, 116, 44, .05);
-    border: 1px solid #e25c00;
+    border: 1px solid #4AC6A1;
     text-align: center;
 }
 
@@ -1315,7 +1315,7 @@ FAQ
     margin-top: -6px;
     margin-bottom: 40px;
     border-bottom: 1px solid currentColor;
-    color: #e25c00;
+    color: #4AC6A1;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -1432,13 +1432,13 @@ FAQ + リスト
 }
 
 .bl_faq_q .bl_faq_icon {
-    background-color: #e25c00;
+    background-color: #4AC6A1;
     color: #fff;
 }
 
 .bl_faq_a .bl_faq_icon {
     background: #efefef;
-    color: #e25c00;
+    color: #4AC6A1;
 }
 
 /*頭揃えで上に寄った分の余白を下げる指定*/
