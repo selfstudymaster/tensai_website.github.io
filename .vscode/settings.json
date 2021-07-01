@@ -2,5 +2,6 @@
     "cSpell.ignoreWords": [
         "selfstudymaster",
         "tensai"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
