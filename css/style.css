@@ -690,15 +690,15 @@ a.bl_card:hover .bl_card_txt {
 
 .bl_pager_link:focus,
 .bl_pager_link:hover {
-  background-color: #e25c00;
-  color: #fff;
-  opacity: .75;
+    background-color: #e25c00;
+    color: #fff;
+    opacity: .75;
 }
 
 .bl_pager_link.is_active {
-  background-color: #e25c00;
-  color: #fff;
-  pointer-events: none;
+    background-color: #e25c00;
+    color: #fff;
+    pointer-events: none;
 }
 
 /*==================================
@@ -982,14 +982,14 @@ FAQ
 /*二つ目以降の要素に適用することを示すために+を用いる*/
 .bl_accordion_body + dt {
     /*margin-bottomで指定すると、display:none;がかかってる要素にmarginが効かないため
-      margin-topで指定*/
+    margin-topで指定*/
     margin-top: 20px;
 }
 
 .bl_accordion_btn {
     position: relative;
     /*button要素は初期値がinline-block要素でwidth:auto;のため、
-      block要素にしwidth:100%に指定;*/
+    block要素にしwidth:100%に指定;*/
     display: block;
     width: 100%;
     padding:10px 40px 10px 15px ;
@@ -1069,7 +1069,7 @@ FAQ
 ==================================*/
 .bl_jumbotron {
     /*メディアクエリ適用時、スクリーンサイズを縮小した際にガクッとならず自然とサイズを切り替えるための指定
-      calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
+    calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
     height: calc(69.44444vw + -233.33333px);
     /*背景画像を左右中央配置*/
     background-position: center center;
@@ -1093,7 +1093,7 @@ FAQ
     background-color: rgba(0, 0, 0, .75);
     color: #fff;
     /*メディアクエリ適用時、スクリーンサイズを縮小した際にガクッとならず自然とサイズを切り替えるための指定
-      calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
+    calc関数を使用し、ViewportScaleの計算式を利用して値を算出*/
     font-size: calc(1.81818vw + 14.18182px);
     line-height: 1.5;
     transform: translateY(-50%);
@@ -1113,7 +1113,7 @@ FAQ
 .bl_bulletList li {
     position: relative;
     /*行頭アイコンを表示するためのスペースを確保。
-      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
     padding-left: 1em;
     margin-bottom: 10px;
 }
@@ -1185,7 +1185,7 @@ FAQ
 .bl_orderList li {
     position: relative;
     /*行頭アイコンを表示するためのスペースを確保。
-      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
     padding-left: 1em;
     margin-bottom: 10px;
 }
@@ -1220,7 +1220,7 @@ FAQ
 .bl_orderList ol > li {
     position: relative;
     /*行頭アイコンを表示するためのスペースを確保。
-      フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
+    フォントサイズに応じて自動的にスペースも増幅させるためにemで指定*/
     padding-left: 1em;
     margin-bottom: 10px;
 }
@@ -1371,11 +1371,11 @@ FAQ
     flex-wrap: wrap;
     margin-bottom: -10px;
 }
-  
+
 .bl_vertPosts_labels > *:last-child {
     margin-right: 0;
 }
-  
+
 .bl_vertPosts_labels > li {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -1557,7 +1557,7 @@ FAQ + リスト
 
 .bl_footerChildNav_item {
     margin-bottom: 10px;
-  }
+}
 
 .bl_footerChildNav_link {
     display: block;
@@ -1566,17 +1566,17 @@ FAQ + リスト
     color: #ddd;
     text-decoration: none;
 }
-  
+
 .bl_footerChildNav_item {
     margin-bottom: 10px;
 }
-  
+
 .bl_footerChildNav_link {
     color: #ddd;
     font-size: 15px;
     text-decoration: none;
 }
-  
+
 .bl_footerChildNav_link:focus,
 .bl_footerChildNav_link:hover {
     text-decoration: underline;
@@ -1722,7 +1722,7 @@ FAQ + リスト
     }
 
     /*メディアクエリで固定したい見出し用のクラス指定
-      特定の位置に固定して表示を指定*/
+    特定の位置に固定して表示を指定*/
     .bl_crossTable_mdSticky {
         position: -webkit-sticky;
         position: sticky;
@@ -1773,14 +1773,14 @@ FAQ + リスト
     }
 
     /*メディアクエリで固定したい見出し用のクラス指定
-      特定の位置に固定して表示を指定*/
+    特定の位置に固定して表示を指定*/
     .bl_priceTable_bodyTtl {
         position: -webkit-sticky;
         position: sticky;
         left: 0;
         background-color: #fff;
         /*margin-rightで指定するとスクロールした際に右縦線が消えるので
-          box-shadowで指定し表示*/
+        box-shadowで指定し表示*/
         box-shadow: 1px 0 #ddd;
         font-size: .875rem;
     }
