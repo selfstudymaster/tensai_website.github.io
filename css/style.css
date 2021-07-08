@@ -1708,6 +1708,16 @@ FAQ + リスト
         margin-right: 0;
     }
 
+    /*===== ヘッダーとフッターのメニュー =====*/
+    .bl_headerNav {
+        display: none;
+    }
+    .bl_footerNav {
+        display: none;
+    }
+
+
+
     /*=========モジュール 画像半分サイズ=======*/
     .bl_halfMedia {
         display: block;
