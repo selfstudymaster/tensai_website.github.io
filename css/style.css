@@ -510,10 +510,16 @@ img {
     margin-bottom: 5px;
     font-size: 1.125rem;
     font-weight: bold;
+    /* color: #333; */
 }
 
 .bl_card_txt {
-    color: #777;
+    font-weight: bold;
+    /* color: #333; */
+}
+
+.bl_card_descliption {
+    color: #111;
 }
 
 /*==================================
