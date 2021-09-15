@@ -25,16 +25,26 @@ img {
 レイアウト ヘッダー
 ===================================================*/
 .ly_header {
-    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    padding-top: 25px;
     border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 }
 
 .ly_header_inner {
+    /* display: flex; */
     max-width: 1230px;
+    height: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /*=================================================
@@ -51,12 +61,19 @@ img {
 /*=================================================
 レイアウト セクション
 ===================================================*/
+.ly_mv {
+    /* padding-top: 20px; */
+    margin-top: 110px;
+    /* メインビジュアルなので左右のマージンは他のセクションより広めるためつけない */
+    /* margin-right: 40px; */
+    /* margin-left: 40px; */
+}
+
 
 .ly_section {
     margin-top: 60px;
     margin-right: 40px;
     margin-left: 40px;
-    
 }
 
 /*== 問い合わせフォールのレイアウト ==*/
@@ -95,11 +112,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .bl_headerUtils_logo {
     width: 120px;
+}
+
+.bl_headerUtils_ttl {
+    color: #C02297;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .bl_headerUtils .el_btn {
@@ -154,13 +177,14 @@ img {
 /*==================================
 モジュール ハンバーガーメニュー
 ==================================*/
+
 .menu-btn {
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 16px;
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     justify-content: center;
     align-items: center;
     z-index: 90;
@@ -245,6 +269,7 @@ img {
 モジュール メインビジュアル
 ==================================*/
 .bl_mv {
+    
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
