@@ -277,7 +277,7 @@ img {
 .bl_mv_imgWrapper {
     position: relative;
     padding-top: 56.25%;
-    /* bl_card_imgWrapper > imgで指定する画像が溢れないための指定 */
+    /* bl_mv_imgWrapper > imgで指定する画像が溢れないための指定 */
     overflow: hidden;
     background-size: cover;
 }
