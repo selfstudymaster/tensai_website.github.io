@@ -22,7 +22,7 @@ img {
 ボタン
 ===================================================*/
 /* el_buttonは「送信ボタン」で使用中 */
-.el_button {
+.el_button .submit-btn{
     display: inline-block;
     padding: 12px 36px;
     background: linear-gradient(90deg, #d10fe2 0%, #6020B0 100%);
@@ -32,7 +32,12 @@ img {
     text-align: center;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
+    cursor : pointer;
 }
+
+/* .el_button:hover {
+    background-color: rgba(255, 255, 255, .2);
+} */
 
 .bl_contactBtn_wrapper {
     margin-left: 0px;
