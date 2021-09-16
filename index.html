@@ -255,13 +255,123 @@
         <!-- Contact -->
         <section class="ly_section" id="contact">
             <h2 class="el_lv2Heading">Contact</h2>
-            <div>
-                <p>のちほど実装予定</p>
+            <div class="ly_contact_inner">
+                <p class="bl_contact_txt">下記のフォームにて<br/>お問い合わせ承ります</p>
+                <div class="ly_contactForm_wrapper">
+                    <!--  -->
+                    <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeDTp8zTdfjqJdd1RAqWNSiZCHrS6IJtWuiy80DBgJcX7eyGQ/formResponse" id="form">
+                        
+                        <!-- 企業名入力欄 -->
+                        <div class="bl_contactForm_box">
+                            <label class="bl_contactForm_ttl" for="name">企業名</label>
+                            <a class="el_button_arrowRight">必須</a>
+                        </div>
+                        <input class="bl_contactForm_input" type="text" name="entry.2005620554" id="company" placeholder="企業名" required>
+
+                        <!-- ご担当者様のお名前入力欄 -->
+                        <div class="bl_contactForm_box">
+                            <label class="bl_contactForm_ttl" for="name">ご担当者様のお名前</label>
+                            <a class="el_button_arrowRight">必須</a>
+                        </div>
+                        <input class="bl_contactForm_input" type="text" name="entry.2125175203" id="name" placeholder="ご担当者様のお名前" required>
+
+                        <!-- 会社所在地入力欄 -->
+                        <div class="bl_contactForm_box">
+                            <label class="bl_contactForm_ttl" for="name">会社所在地</label>
+                            <a class="el_button_arrowRight">必須</a>
+                        </div>
+                        <input class="bl_contactForm_input" type="text" name="entry.1452911045" id="address" placeholder="会社所在地" required>
+
+                        <!-- ご返信先メールアドレス入力欄 -->
+                        <div class="bl_contactForm_box">
+                            <label class="bl_contactForm_ttl" for="mail">メールアドレス</label>
+                            <a class="el_button_arrowRight">必須</a>
+                        </div>
+                        <input class="bl_contactForm_input" type="mail" name="entry.1045781291" id="mail" placeholder="メールアドレス" required>
+                        
+                        <!-- お問い合わせ内容入力欄 -->
+                        <div class="bl_contactForm_box">
+                            <label class="bl_contactForm_ttl" for="text">お問い合わせ内容</label>
+                            <a class="el_button_arrowRight">必須</a>
+                        </div>
+                        <textarea class="bl_contactForm_input bl_contactForm_inputArea" name="entry.839337160" id="text" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
+                        
+                        <!-- プライバシーポリシーと送信ボタン のエリア-->
+                        <div class="bl_contactForm_box">
+                            <!--プライバシーポリシー同意チェックボックス-->
+                            <!-- <label class="bl_contactForm_ttl" for="privacyCheck">プライバシーポリシーに同意します</label> -->
+                            <!-- <input type="checkbox" id="privacyCheck" required> -->
+                            <!--送信ボタン-->
+                            <div class="bl_contactBtn_wrapper">
+                                <a class="el_button" href="">送信<input class="hidden submit-btn" type="submit" id="js-submit" disabled></a>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <!-- 送信後遷移して表示されるメッセージ 送信前はhiddenされている-->
+                    <p class="end-message">お問い合わせありがとうございました</p>
+                    <p class="false-message">問い合わせメールの送信に失敗しました</p>
+
+                    <!--
+                    <form class="bl_contactForm" action="" method="post">
+                        <div class="bl_contactForm_inner"></div>
+                            <label class="bl_contactForm_label" for="">
+                                お名前
+                                <span class="el_btn_arrowRight">必須</span>
+                            </label>
+                            <input type="text">
+                            <div class="bl_contactForm_warning"></div>
+                            <div>
+                                <label class="bl_contactForm_label" for="">
+                                    メールアドレス
+                                    <span class="el_btn_arrowRight">必須</span>
+                                </label>
+                                <input type="text">
+                                <div class="bl_contactForm_warning"></div>
+                                <div>
+                                    <label class="bl_contactForm_label" for="">
+                                        お問い合わせ
+                                        <span class="el_btn_arrowRight">必須</span>
+                                    </label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <div class="bl_contactForm_warning"></div>
+                                    <div>
+                                        <input type="text">
+                                        <label for="">プライバシーポリシーに同意する</label>
+                                    </div>
+                                    <div class="bl_contact_btn">
+                                        <a class="el_button el_button_submit" href=""><input type="submit" value="送信する"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    -->
+                    
+                    <!--
+                    <li class="bl_contactForm_cont">
+                        <p class="bl_contactForm_name">お名前</p>
+                        <a class="el_btn_arrowRight" href="">必須</a>
+                        <input class="bl_contactForm_input" type="name" name="name">
+                    </li>
+                    <li>
+                        <p class="bl_contactForm_email">メールアドレス</p>
+                        <a class="el_btn_arrowRight" href="">必須</a>
+                        <input type="email" name="email">
+                    </li>
+                    <li>
+                        <p class="bl_contactForm_txt">お問い合わせ内容</p>
+                        <a class="el_btn_arrowRight" href="">必須</a>
+                        <textarea name="text" id="" cols="30" rows="10"></textarea>
+                    </li>
+                    -->
+
+                </div>
+                <!-- Ajax用に必要なjQuery読み込み -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             </div>
         </section>
         
-        
-
     </main>
     <footer>
         <div class="ly_footer"><!--外側にあたる要素 ly_footer_inner -->
@@ -271,22 +381,22 @@
                         <li class="bl_footerNav_item">
                             <a class="bl_footerNav_link" href="#news">News</a>
                             <ul class="bl_footerChildNav">
-                              <li class="bl_footerChildNav_item">
+                            <li class="bl_footerChildNav_item">
                                 <a class="bl_footerChildNav_link" href="#">最新記事</a>
-                              </li>
-                              <!-- <li class="bl_footerChildNav_item">
+                            </li>
+                            <!-- <li class="bl_footerChildNav_item">
                                 <a class="bl_footerChildNav_link" href="#"></a>
-                              </li> -->
+                            </li> -->
                             </ul>
                         </li>
                         <li class="bl_footerNav_item">
                             <a class="bl_footerNav_link" href="#profile">Profile</a>
                             <ul class="bl_footerChildNav">
                                 <!-- <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#">天才とは？</a>
+                                <a class="bl_footerChildNav_link" href="#">天才とは？</a>
                                 </li> -->
                                 <!-- <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#">天才の構成要素</a>
+                                <a class="bl_footerChildNav_link" href="#">天才の構成要素</a>
                                 </li> -->
                                 <!-- <li class="bl_footerChildNav_item">
                                     <a class="bl_footerChildNav_link" href="#"></a>
@@ -297,10 +407,10 @@
                             <a class="bl_footerNav_link" href="#music">Music</a>
                             <!-- <ul class="bl_footerChildNav">
                                 <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#"></a>
+                                <a class="bl_footerChildNav_link" href="#"></a>
                                 </li>
                                 <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#"></a>
+                                <a class="bl_footerChildNav_link" href="#"></a>
                                 </li>
                             </ul> -->
                         </li>
@@ -311,10 +421,10 @@
                             <a class="bl_footerNav_link" href="#radio">Radio</a>
                             <ul class="bl_footerChildNav">
                                 <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#"></a>
+                                <a class="bl_footerChildNav_link" href="#"></a>
                                 </li>
                                 <li class="bl_footerChildNav_item">
-                                  <a class="bl_footerChildNav_link" href="#"></a>
+                                <a class="bl_footerChildNav_link" href="#"></a>
                                 </li>
                             </ul>
                         </li> -->
