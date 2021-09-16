@@ -59,6 +59,11 @@ img {
     display: none;
 }
 
+/* 問い合わせフォール送信ボタン押下後の遷移先からホームに「戻る」ボタン */
+.bl_returnButton {
+    cursor : pointer;
+}
+
 /*
 .el_button {
     display: block;
