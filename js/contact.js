@@ -1,4 +1,3 @@
-// index.htmlに直接埋め込んだのでコメントアウト
 $(document).ready(function () {
 
     $('#form').submit(function (event) {
