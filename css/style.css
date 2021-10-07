@@ -18,6 +18,17 @@ img {
     vertical-align: top;
 }
 
+/* 画面全体のフェードイン */
+.effect-fade {
+    opacity : 0;
+    transform : translate(0, 90px);
+    transition : all 800ms;
+}
+.effect-fade.effect-scroll {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
 /*=================================================
 ボタン
 ===================================================*/
