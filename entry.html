@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <title>天才 公式ホームページ</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Twitterカード-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@selfstudymaster" />
+    <meta name="twitter:creator" content="@selfstudymaster" />
+    <meta property="og:url" content="https://selfstudymaster.github.io/tensai_website.github.io/" />
+    <meta property="og:title" content="天才のWebサイト" />
+    <meta property="og:description" content="天才のWebサイトができました。プログラマです。" />
+    <meta property="og:image" content="https://selfstudymaster.github.io/tensai_website.github.io/assets/img/elements/tensai_icon_2021_01_840x840.png" />
+    <!--FontAwesomeCDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--以下PRECSSで記述します-->
+    <!--ヘッダー外側にあたる要素 ly_header -->
+    <header class="ly_header effect-fade">
+        <!--ヘッダー内側にあたる要素 ly_header -->
+        <div class="ly_header_inner">
+            <!--ヘッダー内側のロゴアイコンとボタン -->
+            <!-- <div class="bl_headerUtils">
+                <a class="bl_headerUtils_logo" href="#"><img src="./assets/img/elements/tensai_icon_2021_01_840x840.png" alt="ヘッダーアイコン"></a>
+                <p class="bl_headerUtils_ttl">天才のホームページ</p>
+                <a class="el_btn" href="#">お問い合わせ</a>
+            </div> -->
+            <!--ヘッダー内側のロゴアイコンとボタン /.bl_headerUtils -->
+            <!--ヘッダー内側のナビゲーション -->
+            <nav>
+                <ul class="bl_headerNav">
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#news">News</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#profile">Profile</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#music">Music</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#movie">Movie</a></li>
+                    <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#radio">Radio</a></li> -->
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#streaming">Streaming</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#schedule">Schedule</a></li>
+                    <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#reserve">Reserve</a></li> -->
+                    <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#shop">Shop</a></li> -->
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!--ヘッダー内側のナビゲーション / -->
+            <!--ハンバーガーメニュー ヘッダー内側のナビゲーション -->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#news">News</a></li>
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#profile">Profile</a></li>
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#music">Music</a></li>
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#movie">Movie</a></li>
+                        <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#radio">Radio</a></li> -->
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#streaming">Streaming</a></li>
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#schedule">Schedule</a></li>
+                        <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#reserve">Reserve</a></li> -->
+                        <!-- <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#shop">Shop</a></li> -->
+                        <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--ハンバーガーメニュー ヘッダー内側のナビゲーション /-->
+        </div>
+        <!--ヘッダー内側にあたる要素 /.ly_header_inner -->
+    </header>
+    <!--ヘッダー外側にあたる要素 ly_header -->
+
+    <main class="ly_cont">
+
+        <!-- パンくすリスト breadcrumb -->
+        <section class="ly_section effect-fade" id="#">
+            <div class="breadcrumb">
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="/" class="home"><span property="name">ホーム</span></a>
+                    <meta property="position" content="1">
+                </span>
+                <i class="fas fa-angle-right"></i>
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="#" class="taxonomy category"><span
+                            property="name">Entry</span></a>
+                    <meta property="position" content="2">
+                </span>
+                <i class="fas fa-angle-right"></i>
+                <span class="post post-post current-item">記事のタイトルが入ります</span>
+            </div><!-- /breadcrumb -->
+        </section>
+
+        <!--後で消す /Users/mac/Documents/HTMLCSS/デイトラ/3rd/html/single.html 参照-->
+        <!-- Entry -->
+        <!--bl_vertPostsというクラス命名 (vertはvertical=垂直の省略形)-->
+        <section class="ly_section effect-fade" id="entry">
+            <h2 class="el_lv2Heading">Entry</h2>
+            <ul class="bl_entry">
+                <li class="bl_entry_item">
+                    <!--のちに日付の後にラベルを付けるのでdiv要素を設置-->
+                    <div class="bl_entry_header">
+                        <time class="bl_entry_date" datetime="2020-09-27">2021/11/01</time>
+                    </div>
+                </li>
+                
+            </ul>
+            <!-- entry -->
+            <article class="entry">
+
+                <!-- entry-header -->
+                <div class="entry-header">
+                    <div class="entry-label"><a href="#">カテゴリ名</a></div><!-- /entry-item-tag -->
+                    <h1 class="entry-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</h1><!-- /entry-title -->
+
+                    <!-- entry-meta -->
+                    <div class="entry-meta">
+                        <time class="entry-published" datetime="2019-01-01">公開日 2019/1/1</time>
+                        <time class="entry-updated" datetime="2019-04-01">最終更新日 2019/4/1</time>
+                    </div><!-- /entry-meta -->
+
+                    <!-- entry-img -->
+                    <div class="entry-img">
+                        <img src="img/entry1.png" alt="">
+                    </div><!-- /entry-img -->
+
+                </div><!-- /entry-header -->
+
+                <!-- entry-body -->
+                <div class="entry-body">
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+
+                    <div id="toc_container">
+                        <p class="toc_title">この記事のコンテンツ</p>
+                        <ul class="toc_list">
+                            <li><a href="#i">見出しが入ります</a>
+                                <ul>
+                                    <li><a href="#">見出しが入ります</a></li>
+                                    <li><a href="#">見出しが入ります</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#i">見出しが入ります</a>
+                                <ul>
+                                    <li><a href="#">見出しが入ります</a></li>
+                                    <li><a href="#">見出しが入ります</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2>見出しが入ります</h2>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<a
+                            href="#">テキストリンクテキストリンク</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h3>見出しが入ります</h3>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<a
+                            href="#">テキストリンクテキストリンク</a>テキストテキストテキストテキストテキスト<strong>テキストボールドテキストボールド</strong>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h4>見出しが入ります</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<a
+                            href="#">テキストリンクテキストリンク</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <h4>見出しが入ります</h4>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<a
+                            href="#">テキストリンクテキストリンク</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <div class="entry-btn"><a class="btn" href="">テキストテキスト</a></div><!-- /entry-btn -->
+
+                </div><!-- /entry-body -->
+
+
+                <div class="entry-tag-items">
+                    <div class="entry-tag-head">タグ</div><!-- /entry-tag-head -->
+                    <div class="entry-tag-item"><a href="">WordPress</a></div><!-- /entry-tag-item -->
+                    <div class="entry-tag-item"><a href="">コーディング</a></div><!-- /entry-tag-item -->
+                    <div class="entry-tag-item"><a href="">フリーランス</a></div><!-- /entry-tag-item -->
+                </div><!-- /entry-tag-items -->
+
+
+                <div class="entry-related">
+                    <div class="related-title">関連記事</div>
+
+                    <div class="related-items">
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                        <a class="related-item" href="">
+                            <div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
+                            <div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
+                        </a><!-- /related-item -->
+
+                    </div><!-- /related-items -->
+                </div><!-- /entry-related -->
+
+            </article> <!-- /entry -->
+
+            
+        </section>
+
+        <!--サイドバー-->
+        <section class="ly_section effect-fade" id="#">
+            <!-- secondary -->
+			<aside id="secondary">
+
+				<!-- widget -->
+				<div class="widget widget_text widget_custom_html">
+					<div class="widget-title">プロフィール</div>
+
+					<div class="wprofile">
+						<div class="wprofile-img"><img src="img/profile.png" alt=""></div>
+						<div class="wprofile-content">
+							<p>
+								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+							</p>
+						</div>
+						<!-- /wprofile-content -->
+						<nav class="wprofile-sns">
+							<div class="wprofile-sns-item m_twitter"><a href="" rel="noopener noreferrer" target="_blank"><i
+										class="fab fa-twitter"></i></a></div>
+							<div class="wprofile-sns-item m_facebook"><a href="" rel="noopener noreferrer" target="_blank"><i
+										class="fab fa-facebook-f"></i></a></div>
+							<div class="wprofile-sns-item m_instagram"><a href="" rel="noopener noreferrer" target="_blank"><i
+										class="fab fa-instagram"></i></a></div>
+						</nav>
+					</div><!-- /wprofile -->
+				</div><!-- /widget -->
+
+
+				<!-- widget -->
+				<div class="widget widget_search">
+					<div class="widget-title">検索</div>
+					<!-- search-form -->
+					<form method="get" class="search-form" action="#">
+						<input type="search" class="search-field" value="" placeholder="キーワード" name="s" id="s">
+						<button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+					</form><!-- /search-form -->
+				</div><!-- /widget -->
+
+
+				<!-- widget -->
+				<div class="widget widget_popular">
+					<div class="widget-title">人気記事</div>
+
+					<div class="wpost-items m_ranking">
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry2.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry1.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry3.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry4.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry5.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+					</div><!-- /wpost-items -->
+				</div><!-- /widget -->
+
+
+
+				<!-- widget -->
+				<div class="widget widget_recent">
+					<div class="widget-title">新着記事</div>
+
+					<div class="wpost-items">
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry7.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry6.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry10.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry7.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+						<!-- wpost-item -->
+						<a class="wpost-item" href="#">
+							<div class="wpost-item-img"><img src="img/entry9.png" alt=""></div>
+							<div class="wpost-item-body">
+								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
+							</div><!-- /wpost-item-body -->
+						</a><!-- /wpost-item -->
+
+					</div><!-- /wpost-items -->
+				</div><!-- /widget -->
+
+				<div class="widget widget_archive">
+					<div class="widget-title">アーカイブ</div>
+					<ul>
+						<li><a href="#">テキストテキストテキスト</a></li>
+						<li><a href="#">テキストテキストテキスト</a></li>
+						<li><a href="#">テキストテキストテキスト</a></li>
+					</ul>
+				</div><!-- /widget -->
+
+			</aside><!-- secondary -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="ly_footer effect-fade"><!--外側にあたる要素 ly_footer_inner -->
+            <div class="ly_footer_inner"><!--内側にあたる要素 ナビゲーション ly_footer_inner -->
+                <nav>
+                    <ul class="bl_footerNav">
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#news">News</a>
+                            <ul class="bl_footerChildNav">
+                            <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#">最新記事</a>
+                            </li>
+                            <!-- <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#"></a>
+                            </li> -->
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#profile">Profile</a>
+                            <ul class="bl_footerChildNav">
+                                <!-- <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#">天才とは？</a>
+                                </li> -->
+                                <!-- <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#">天才の構成要素</a>
+                                </li> -->
+                                <!-- <li class="bl_footerChildNav_item">
+                                    <a class="bl_footerChildNav_link" href="#"></a>
+                                </li> -->
+                            </ul>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#music">Music</a>
+                            <!-- <ul class="bl_footerChildNav">
+                                <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#"></a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#"></a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#movie">Movie</a>
+                        </li>
+                        <!-- <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#radio">Radio</a>
+                            <ul class="bl_footerChildNav">
+                                <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#"></a>
+                                </li>
+                                <li class="bl_footerChildNav_item">
+                                <a class="bl_footerChildNav_link" href="#"></a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#streaming">Streaming</a>
+                        </li>
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#schedule">Schedule</a>
+                        </li>
+                        <!-- <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#reserve">Reserve</a>
+                        </li> -->
+                        <!-- <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#shop">Shop</a>
+                        </li> -->
+                        <li class="bl_footerNav_item">
+                            <a class="bl_footerNav_link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--内側にあたる要素 /.ly_footer_inner-->
+        </div>
+        <!--外側にあたる要素 /.ly_footer-->
+        <!--外側にあたる要素 ボーダー -->
+        <div class="ly_footer hp_btGray">
+            <!--内側にあたる要素 Copyright-->
+            <div class="ly_footer_inner">
+                <small class="el_footerCopyright">© 2021 selfstudymaster® All Rights Reserved.</small>
+            </div>
+            <!--内側にあたる要素 Copyright /.ly_footer_inner-->
+        </div>
+        <!--外側にあたる要素 ボーダー /.ly_footer hp_btGray-->
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+</body>
+
+</html>
