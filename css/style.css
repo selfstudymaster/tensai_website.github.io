@@ -399,6 +399,7 @@ img {
 	width: 100%;
 }
 
+/* サイドバー */
 #secondary {
 	margin-left: auto;
 	width: 30.90909%;
@@ -2758,7 +2759,7 @@ FAQ + リスト
         margin-bottom: 14px;
     }
 
-    /*=========パンくずリスト=======*/
+    /*=========サイドバー=======*/
 
     #primary {
         margin-bottom: 70px;
